@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let li = ['a','b','c','d','e'];
+
+        li.push('f'); // a,b,c,d,e,f
+
+        li = li.concat(['g','h']); // a,b,c,d,e,f,g,h
+        
+        let li = ['a','b','c','d','e'];
+
+        li.unshift('z'); // z,a,b,c,d,e
+
+        li.splice(2,0,'B'); // z,a,B,c,d,e
+
+        let li = ['a','b','c'];
+        let a = li.splice(1,1,'x','y'); // a,x,y,c -> 1에 해당하는 인덱스를 삭제하고 삽입하고 삭제된 인덱스 리턴
+
+
+
+
+
+    </script>
+</body>
+</html>

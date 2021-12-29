@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <ul>
+        <li>egoing</li>
+        <li>gradphiite</li>
+        <li>leezche</li>
+
+    </ul> -->
+    <ul>
+    <script>
+        let grades = { 'egoing': 10, 'k8805': 6, 'sorialgi': 80 };
+
+        for (const key in grades) {
+            if (Object.hasOwnProperty.call(grades, key)) {
+                const element = grades[key];
+                document.write(element + "<br />");
+            }
+        }
+        for (key in grades) {
+            document.write("<li>key : " + key + " value : " + grades[key] + "</li>");
+
+        }
+
+    </script>
+    </ul>
+
+</body>
+
+</html>
