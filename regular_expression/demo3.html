@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // i를 붙이면 대소문자를 구분하지 않는다.
+        let xi = /a/;
+        console.log("Abcde".match(xi));
+
+        let oi = /a/i;
+        console.log("Abcde".match(oi));
+
+        // g를 붙이면 검색된 모든 결과를 리턴한다.
+        let xg = /a/;
+        console.log("abcedea".match(xg));
+
+        let og = /a/g;
+        console.log("abcedea".match(og));
+
+        let ig = /a/ig;
+        console.log("AbcdeAAadef".match(ig));
+
+
+    </script>
+</body>
+
+</html>

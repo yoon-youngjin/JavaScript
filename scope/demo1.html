@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 유효범위(scope) : 변수의 수명
+
+        var vscope = 'global'; // 전역변수
+        function fscope() {
+            var vscope = 'local'; // 지역변수
+            console.log(vscope);
+        }
+        fscope();
+        console.log(vscope); // global
+
+        function fscope2() {
+            vscope = 'local'; // 전역변수
+        }
+        fscope2();
+        console.log(vscope); // local
+
+        var vscope2 = 'global'; // 전역변수
+
+        function fscope3() {
+            var vscope2 = 'local'; // 지역변수  
+            vscope2 = 'local'; // 가까운 지역변수 참조
+        }
+        fscope3();
+        console.log(vscope2); // global
+    </script>
+</body>
+
+</html>

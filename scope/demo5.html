@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 정적 유효범위(lexical scoping)
+        var i = 5;
+
+        function a() {
+            var i = 10;
+            b();
+        }
+        function b() {
+            document.write(i);
+        }
+        // b()가 선언될 때 i를 사용, 호출 시점의 i를 사용x
+        a();
+
+    </script>
+</body>
+</html>

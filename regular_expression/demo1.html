@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 정규표현식 주요 작업 -> 추출, test, 치환
+        // 정규표현식 리터럴
+        let pattern1 = /a/;
+        let pattern2 = new RegExp('a');
+
+        // 정규표현식 메소드 실행
+        console.log(pattern1.exec('abcdef'));
+        console.log(pattern1.exec('bcdef'));
+
+        let temp = pattern1.exec('abcedf');
+
+        console.log(pattern1.test('abcdef'));
+        console.log(pattern1.test('bcdef'));
+
+
+        let pattern3 = /a./; // '.'은 하나의 문자
+        console.log(pattern3.exec('abcdef'));
+
+
+
+    </script>
+</body>
+</html>
