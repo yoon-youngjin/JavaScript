@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //prototype-based programming
+        // 객체란 서로 연관된 변수와 함수를 그룹핑한 그릇
+        // 객체 내의 변수를 property, 함수를 method라고 부른다.
+        let person1 = {
+            'name' : 'egoing',
+            'introduce' : function() { // 중복
+                return 'My name is '+this.name;
+            }
+
+        }
+        let person2 = {
+            'name' : 'leezche',
+            'introduce' : function() { // 중복
+                return 'My name is '+this.name;
+            }
+
+        }
+        document.write(person.introduce());
+
+    </script>
+</body>
+</html>

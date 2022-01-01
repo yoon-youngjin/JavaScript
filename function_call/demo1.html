@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 함수는 객체,객체는 속성을 가지고 있다. 
+        // 속성에 함수가 들어있다면 메소드라고 부른다.
+        // func.call, func.apply
+        function sum(arg1, arg2) {
+            return arg1 + arg2;
+        }
+
+        sum(1,2);
+        // 함수 호출의 다른 방법 -> 첫번째 인자
+        sum.apply(null,[1,2]); 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        o1 = {val1:1,val2:2,val3:3}
+        o2 = {v1:10,v2:50,v3:100,v4:25}
+        
+
+        function sum() {
+            let _sum = 0;
+            // this -> o1, o2
+            for (name in this) { 
+                _sum += this[name]
+            }
+            return _sum;
+        }
+        document.write(sum.apply(o1)) // 6
+        document.write(sum.apply(o2)) // 185
+
+
+    </script>
+</body>
+</html>

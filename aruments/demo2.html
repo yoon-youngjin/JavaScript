@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function zero() {
+            console.log(
+                'zero.length', zero.length,
+                'arguments', arguments.length
+            );
+        }
+        zero(); // 0, 0
+
+        function one(arg1) {
+            console.log(
+                'one.length', one.length, // 1 : 함수가 매개변수로 정의한 매개변수의 개수
+                'arguments', arguments.length // 2 : 함수가 호출될 때 매개변수 개수
+            );
+        }
+        one('val1','val2'); // 1, 2
+
+        function two(arg1, arg2) {
+            console.log(
+                'two.length', zero.length,
+                'arguments', arguments.length
+            );
+        }
+        two('val1'); // 2, 1
+
+        
+    </script>
+</body>
+</html>
