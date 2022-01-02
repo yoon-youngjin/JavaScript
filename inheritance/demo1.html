@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Person(name) {
+            this.name = name;
+        }
+        Person.prototype.name = null;
+        Person.prototype.introduce = function() {
+            return 'My name is '+this.name;
+        }
+
+        let p1 = new Person('egoing');
+        document.write(p1.introduce())
+
+        function Programmer(name) {
+            this.name = name;
+        }
+        Programmer.prototype = new Person(); // 상속
+        Programmer.prototype.coding = function() {
+            return "hello world";
+        }
+
+        function Designer(name) {
+            this.name = name;
+        }
+        Designer.prototype = new Person(); // 상속
+        Designer.prototype.design = function() {
+            return "beautiful!";
+        }
+
+        let p2 = new Programmer('egoing');
+        document.write(p2.introduce())
+        document.write(p2.coding())
+
+        let p3 = new Designer('leezhe');
+        document.write(p3.introduce())
+        document.write(p3.design())
+
+    </script>
+</body>
+</html>
