@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let arr = new Array('seoul', 'new york', 'ladarkh', 'pusan', 'Tsukuba');
+        // function getRandomValueFromArray(arr) {
+        //     let index = Math.floor(arr.length*Math.random());
+        //     return arr[index];
+        // }
+        // console.log(getRandomValueFromArray(arr));
+
+        Array.prototype.random = function() {
+            let index = Math.floor(this.length*Math.random())
+            return this[index];
+        }
+        // 배열 생성시 Array.prototype.random 생성
+        let arr = new Array('seoul', 'new york', 'ladarkh', 'pusan', 'Tsukuba');
+        console.log(arr.random());
+    
+    
+    </script>
+
+</body>
+
+</html>
